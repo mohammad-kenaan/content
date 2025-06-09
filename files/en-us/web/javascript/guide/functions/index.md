@@ -254,8 +254,8 @@ function walkTree(node) {
     return;
   }
   // do something with node
-  for (let i = 0; i < node.childNodes.length; i++) {
-    walkTree(node.childNodes[i]);
+  for (const child of node.childNodes) {
+    walkTree(child);
   }
 }
 ```
